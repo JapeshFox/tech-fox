@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="940px" height="640px" viewBox="0 0 940 640" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Decorative Graphic</title>
+    <defs>
+        <polygon id="path-1" points="0 0 939.333333 0 939.333333 640 0 640"></polygon>
+        <linearGradient x1="50%" y1="50%" x2="99.1698365%" y2="50%" id="linearGradient-3">
+            <stop stop-color="#D8D8D8" offset="0%"></stop>
+            <stop stop-color="#D8D8D8" stop-opacity="0.3" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#000000" stop-opacity="0.335935793" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="🚫-Approved-Header-Images" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Decorative-Graphic" transform="translate(-0.000000, 0.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Mask"></g>
+            <path d="M471.03236,1103.78588 C729.884706,1103.78588 939.724903,893.944889 939.724903,635.093333 C939.724903,376.240988 729.884706,166.4 471.03236,166.4 C212.179224,166.4 2.33981667,376.240988 2.33981667,635.093333 C2.33981667,893.944889 212.179224,1103.78588 471.03236,1103.78588 Z" id="Mask" fill="url(#linearGradient-3)" mask="url(#mask-2)"></path>
+            <polygon id="Shadow" fill="url(#linearGradient-4)" mask="url(#mask-2)" transform="translate(610.542474, 218.394894) rotate(-53.000000) translate(-610.542474, -218.394894) " points="21.1103751 129.110944 1199.97457 129.110944 1199.97457 307.678845 21.1103751 307.678845"></polygon>
+            <polygon id="Dark-Blue" fill="#00263E" mask="url(#mask-2)" points="4.56048862e-13 0 4.56048862e-13 640 388.387619 640 750.269891 0"></polygon>
+            <path d="M515.678681,122.675674 C568.653247,122.675674 619.575124,131.464353 667.065778,147.66318 L388.387619,640 L49.4782277,640.00425 C47.8299981,624.017162 46.9853475,607.791723 46.9853475,591.369007 C46.9853475,332.516662 256.825545,122.675674 515.678681,122.675674 Z" id="Combined-Shape" fill="#D8D8D8" mask="url(#mask-2)"></path>
+        </g>
+    </g>
+</svg>
