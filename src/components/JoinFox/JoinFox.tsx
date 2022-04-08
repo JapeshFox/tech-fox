@@ -41,7 +41,7 @@ function Reason({ title, description }: ReasonItem) {
     <div className={clsx("col col--4")}>
       <div className="text--left padding-horiz--md">
         <h3>{title}</h3>
-        <p>{description}</p>
+        <p className="light-text">{description}</p>
       </div>
     </div>
   );
