@@ -97,11 +97,18 @@ export default function TechStack(): JSX.Element {
         <h1 className="padding-bottom--lg text--left padding-horiz--md">
           Tech stack at Fox
         </h1>
-        {techStackItems.map((item) => {
+        {techStackItems.map((item, index) => {
           return (
-            <div className="padding-bottom--xl padding-horiz--md">
-              <h2 className="padding-bottom--sm">{item.title}</h2>
-              <div className={Styles.techImageContainer}>
+            <div
+              className={clsx(
+                { "padding-top--xl": index !== 0 },
+                "padding-horiz--md"
+              )}
+            >
+              <h2 className="">{item.title}</h2>
+              <div
+                className={clsx(Styles.techImageContainer, "padding-top--sm")}
+              >
                 {item.images.map((src) => {
                   return <img className={Styles.techImage} src={src} />;
                 })}

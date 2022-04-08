@@ -51,7 +51,7 @@ export default function JoinFox(): JSX.Element {
   return (
     <section className={"whyJoinFox"}>
       <div className="container">
-        <div className="row padding-bottom--md">
+        <div className="row ">
           <div className={clsx("col col--7")}>
             <h1 className=" text--left padding-horiz--md">
               Make Your Mark Here.
@@ -66,7 +66,7 @@ export default function JoinFox(): JSX.Element {
             </p>
           </div>
         </div>
-        <div className="row">
+        <div className="row padding-top--md">
           {Reasonist.map((props, idx) => (
             <Reason key={idx} {...props} />
           ))}

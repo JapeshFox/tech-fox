@@ -7,6 +7,7 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import JoinFox from "../components/JoinFox";
 import TechStack from "../components/TechStack";
 import HomePageSlider from "../components/HomePageSlider/HomePageSlider";
+import Benefits from "../components/Benefits";
 
 export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
@@ -19,6 +20,7 @@ export default function Home(): JSX.Element {
       <main>
         <JoinFox />
         <TechStack />
+        <Benefits />
       </main>
     </Layout>
   );
