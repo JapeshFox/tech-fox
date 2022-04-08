@@ -4,7 +4,8 @@ import Layout from "@theme/Layout";
 
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 
-import HomepageFeatures from "../components/HomepageFeatures";
+import JoinFox from "../components/JoinFox";
+import TechStack from "../components/TechStack";
 import HomePageSlider from "../components/HomePageSlider/HomePageSlider";
 
 export default function Home(): JSX.Element {
@@ -16,7 +17,8 @@ export default function Home(): JSX.Element {
     >
       <HomePageSlider />
       <main>
-        <HomepageFeatures />
+        <JoinFox />
+        <TechStack />
       </main>
     </Layout>
   );

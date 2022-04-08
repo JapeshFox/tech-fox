@@ -58,19 +58,34 @@
 /* left: -285px; */
 @media (min-width: 768px) {
   .showcaseContainer {
-    height: 640px;
+    height: 540px;
   }
   .decorativeGraphic {
     left: -285px;
+    height: 540px;
+  }
+  .showcaseImage {
+    height: 540px;
+    width: 105vw;    
+    left: auto;
+  }
+
+  .showcaseInfo :global(.slick-active) :local(.showcaseImage) {
+    animation: moveLeftToRight 10s linear infinite;
+  }
+}
+
+@media screen and (min-width: 1400px) { 
+  .showcaseContainer {
+    height: 640px;
+  }
+  .decorativeGraphic {
+    left: -140px;
     height: 640px;
   }
   .showcaseImage {
     height: 640px;
     width: 105vw;    
     left: auto;
-  }
-
-  .showcaseInfo :global(.slick-active) :local(.showcaseImage) {
-    animation: moveLeftToRight 20s linear infinite;
   }
 }

@@ -16,7 +16,7 @@
   --ifm-code-font-size: 95%;
   --ifm-link-color: rgb(0, 134, 189);
   --ifm-link-decoration: none;
-  --ifm-container-width-xl: 1140px;
+  --ifm-container-width-xl: 1320px;
   --ifm-container-width: 1140px;
 }
 
@@ -28,7 +28,7 @@
 }
 
 .container {
-  max-width: var(--ifm-container-width);
+  padding-top: 10rem;
 }
 
 html[data-theme='dark'] .docusaurus-highlight-code-line {

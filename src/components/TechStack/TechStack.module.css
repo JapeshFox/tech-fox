@@ -1,0 +1,46 @@
+.techImage {
+  height: 56px;
+  width: 99.45px;
+}
+
+.techImageContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  column-gap: 33px;
+  row-gap: 8.14px;
+}
+
+@media screen and (min-width: 280px) {
+  .techImageContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 388px) {
+  .techImageContainer {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .techImageContainer {
+    grid-template-columns: repeat(9, 1fr);
+    column-gap: 15.6px;
+    row-gap: 8.15px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .techImageContainer {
+    grid-template-columns: repeat(10, 1fr);
+    column-gap: 15.57px;
+    row-gap: 16.16px;
+  }
+
+  .techImage {
+    height: 64px;
+    width: 113.66px;
+  }
+}
