@@ -42,3 +42,9 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
 [data-theme="dark"] .light-text {
   color: var(--ifm-color-gray-100);
 }
+
+
+.slick-prev:before,
+.slick-next:before {
+  color: var(--ifm-color-content) !important;
+}

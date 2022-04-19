@@ -37,6 +37,7 @@ export default function HomePageSlider() {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
+    arrows: false
   };
   return (
     <div className={Styles.showcaseInfo}>

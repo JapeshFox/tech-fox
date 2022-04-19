@@ -6,6 +6,7 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 
 import JoinFox from "../components/JoinFox";
 import TechStack from "../components/TechStack";
+import MediumBlogs from "../components/MediumBlogs";
 import HomePageSlider from "../components/HomePageSlider/HomePageSlider";
 import Benefits from "../components/Benefits";
 
@@ -21,6 +22,7 @@ export default function Home(): JSX.Element {
         <JoinFox />
         <TechStack />
         <Benefits />
+        <MediumBlogs />
       </main>
     </Layout>
   );

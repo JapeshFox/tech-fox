@@ -1,0 +1,36 @@
+
+
+.MediumBlog:link,
+.MediumBlog:visited,
+.MediumBlog:hover,
+.MediumBlog:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+.MediumBlogImage {
+  width: 240px;
+  height: 222.9px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.MediumBlogTitle {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+@media screen and (min-width: 768px) {
+  .MediumBlogImage {
+    width: 216px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .MediumBlogImage {
+    width: 306px;
+  }
+}
