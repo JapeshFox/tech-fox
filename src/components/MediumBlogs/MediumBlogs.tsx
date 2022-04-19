@@ -72,27 +72,31 @@ export default function MediumBlogs() {
               className={clsx("padding--sm", Styles.MediumBlog)}
               href={link}
             >
-              <div className="card">
-                <div className="card__image">
-                  <img
-                    src={thumbnail}
-                    alt={`${title} image`}
-                    className={Styles.MediumBlogImage}
-                  />
-                </div>
-                <div className="card__body">
-                  <h4 className={Styles.MediumBlogTitle}>{title}</h4>
-                  {categories.map((category) => (
-                    <span className="margin-right--md badge badge--secondary">
-                      {category}
-                    </span>
-                  ))}
-                </div>
+              <div className="card__image">
+                <img
+                  src={thumbnail}
+                  alt={`${title} image`}
+                  className={Styles.MediumBlogImage}
+                />
+              </div>
+              <div className="card__body">
+                <h4 className={Styles.MediumBlogTitle}>{title}</h4>
+                {categories.map((category) => (
+                  <span className="margin-right--md badge badge--secondary">
+                    {category}
+                  </span>
+                ))}
               </div>
             </a>
           ))}
         </Slider>
-        <a href="https://medium.com/fox-tech" rel="noopener" className="margin-top--md button button--lg button--outline button--secondary">See the Blog</a>
+        <a
+          href="https://medium.com/fox-tech"
+          rel="noopener"
+          className="margin-top--md button button--lg button--outline button--secondary"
+        >
+          See the Blog
+        </a>
       </div>
     </section>
   );
