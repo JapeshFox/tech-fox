@@ -18,24 +18,12 @@ const settings = {
       breakpoint: 1024,
       settings: {
         slidesToShow: 3,
-        slidesToScroll: 3,
-        infinite: true,
-        dots: true,
       },
     },
     {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        initialSlide: 2,
-      },
-    },
-    {
-      breakpoint: 480,
+      breakpoint: 768,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1,
       },
     },
   ],
@@ -65,38 +53,42 @@ export default function MediumBlogs() {
             </p>
           </div>
         </div>
-        <Slider {...settings}>
-          {blogs.map(({ thumbnail, title, categories, link }) => (
+        {blogs.length > 0 && (
+          <div className="padding-horiz--lg">
+            <Slider {...settings}>
+              {blogs.map(({ thumbnail, title, categories, link }) => (
+                <a
+                  target="_blank"
+                  className={clsx("padding--sm", Styles.MediumBlog)}
+                  href={link}
+                >
+                  <div className="card__image">
+                    <img
+                      src={thumbnail}
+                      alt={`${title} image`}
+                      className={Styles.MediumBlogImage}
+                    />
+                  </div>
+                  <div className="padding-top--sm">
+                    <h4 className={Styles.MediumBlogTitle}>{title}</h4>
+                    {categories.map((category) => (
+                      <span className="margin-right--md badge badge--secondary">
+                        {category}
+                      </span>
+                    ))}
+                  </div>
+                </a>
+              ))}
+            </Slider>
             <a
-              target="_blank"
-              className={clsx("padding--sm", Styles.MediumBlog)}
-              href={link}
+              href="https://medium.com/fox-tech"
+              rel="noopener"
+              className="margin-top--md button button--lg button--outline button--secondary"
             >
-              <div className="card__image">
-                <img
-                  src={thumbnail}
-                  alt={`${title} image`}
-                  className={Styles.MediumBlogImage}
-                />
-              </div>
-              <div className="card__body">
-                <h4 className={Styles.MediumBlogTitle}>{title}</h4>
-                {categories.map((category) => (
-                  <span className="margin-right--md badge badge--secondary">
-                    {category}
-                  </span>
-                ))}
-              </div>
+              See the Blog
             </a>
-          ))}
-        </Slider>
-        <a
-          href="https://medium.com/fox-tech"
-          rel="noopener"
-          className="margin-top--md button button--lg button--outline button--secondary"
-        >
-          See the Blog
-        </a>
+          </div>
+        )}
       </div>
     </section>
   );

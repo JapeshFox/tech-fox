@@ -9,6 +9,7 @@ import TechStack from "../components/TechStack";
 import MediumBlogs from "../components/MediumBlogs";
 import HomePageSlider from "../components/HomePageSlider/HomePageSlider";
 import Benefits from "../components/Benefits";
+import Quotes from "../components/Quotes";
 
 export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
@@ -21,8 +22,9 @@ export default function Home(): JSX.Element {
       <main>
         <JoinFox />
         <TechStack />
-        <Benefits />
         <MediumBlogs />
+        <Benefits />
+        <Quotes />
       </main>
     </Layout>
   );

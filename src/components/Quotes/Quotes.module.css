@@ -1,0 +1,46 @@
+.container {
+  width: 900px;
+  max-width: 100%;
+}
+
+.quoteMessage {
+  background: linear-gradient(to bottom right, #386b8f 10%, #1b3140 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 500;
+  color: rgb(27, 49, 64);
+  font-size: 29px;
+  letter-spacing: -0.69px;
+  line-height: 39px;
+}
+
+.quoteMessage::before,
+.quoteMessage::after {
+  content: "“";
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .quoteMessage {
+    font-size: 28px;
+    letter-spacing: -0.56px;
+    line-height: 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .quoteMessage {
+    font-size: 44px;
+    letter-spacing: -1.05px;
+    line-height: 63px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .quoteMessage {
+    font-size: 44px;
+    letter-spacing: -1.05px;
+    line-height: 63px;
+  }
+}
